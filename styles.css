@@ -1,0 +1,354 @@
+
+
+body{
+  border: 6px solid #faa;
+}
+
+.navbar {
+  background-color: #030200;
+}
+h1, h2, h3{
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 8%;
+}
+.item {
+  margin-right: 37%;
+  font-family: 'Special Elite', cursive;
+}
+
+.link1 {
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
+  font-size: 25px;
+}
+
+.last{
+  margin-right: 12px;
+}
+
+.color{
+  color: #faa;
+}
+.bar{
+  color: #faa;
+}
+
+.navbar-toggler{
+  margin-left: 46%;
+}
+
+.icon{
+  padding: 10%;
+}
+
+.top{
+  margin: 5% 20% 3%;
+}
+
+.icon2{
+  height: 250px;
+  border: 6px dotted #faa;
+  border-radius: 120px;
+  margin: 20% 0 0 30%;
+}
+
+.line{
+  border: 6px dotted black;
+  border-top: none;
+  width: 5%;
+  margin: auto;
+}
+
+/* nav button */
+
+.btn {
+  background: white;
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: linear-gradient(to bottom, white, white);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #faa;
+  font-size: 22px;
+  padding: 7px 15px 7px 15px;
+  border: solid #faa 2px;
+  text-decoration: none;
+  margin: 8% 33%;
+}
+
+.btn:hover {
+  background: #faa;
+  text-decoration: none;
+  color: white;
+}
+
+/* animation */
+
+.ani {
+  display: inline-block;
+  position: relative;
+  color:
+    white;
+}
+
+.ani:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:
+    #faa;
+  transform-origin: bottom right;
+  transition: transform .50s ease-out;
+  color: white;
+}
+
+.ani:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transform: 0.25s ease-out;
+  color: white;
+}
+
+
+ /* text ani */
+.callout{height: 18px;
+width: 80px;
+background-image: -moz-linear-gradient(top,#2b2929,#2b2929);
+position: relative;
+padding: 10px;
+border-radius: 3px;
+margin: 25px;
+min-height: 50px;
+border: 1px solid #2b2929;
+text-shadow: 0 0 1px #000;
+transform: scale(0);
+}
+
+.text-kjColorLight {
+--text-opacity: 1;
+color: #f2f0ee;
+color: rgba(242,240,238,var(--text-opacity));
+}
+.shadow {
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.bg-kjColorDark {
+--bg-opacity: 1;
+background-color: #2b2929;
+background-color: rgba(43,41,41,var(--bg-opacity));
+}
+.callout.top-left[data-v-47c51e75]:before {
+left: 7px;
+bottom: -20px;
+border-top: 10px solid #2b2929;
+}
+
+.callout[data-v-47c51e75]:before {
+content: "";
+width: 0;
+height: 0;
+border: .8em solid transparent;
+position: absolute;
+}
+
+
+*, :after, :before {
+box-sizing: border-box;
+border: 0 solid #e2e8f0;
+}
+
+.popout {
+    animation: popout 2s ease;
+    -webkit-animation: popout 1s ease;
+    background-color: black;
+    margin: 18% 0 5%;
+}
+
+.callout.top-right[data-v-47c51e75]:before {
+right: 7px;
+bottom: -20px;
+border-top: 10px solid #2b2929;
+
+}
+
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+
+.popout2{
+    animation: popout 2s ease;
+    -webkit-animation: popout 2s ease;
+    background-color: black;
+    margin: 3% 18%;
+
+}
+
+/* typing */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 7% 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  /* animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite; */
+
+    line-height: normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* slide */
+
+.slideUp {
+  top:40px;
+  left:10px;
+  margin: 15% 0 0;
+font-family: 'Abyssinica SIL', serif;
+font-size: 17px;
+color: black;
+font-weight: bold;
+font-size:x-large;
+  /* animation: slideUp ease .5s forwards 1.2s; */
+}
+
+
+@keyframes slideUp {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-40px);opacity:1;}
+}
+
+
+/* about */
+
+.about{
+  text-align:center;
+  margin-top: 8%
+}
+
+.s{
+  margin:10% 12% 0;
+}
+
+.skill{
+    padding: 1rem ;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    background: rgba(153,153,153,.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666;
+
+}
+
+.boxing{
+  display: flex;
+    flex-wrap: wrap;
+  padding-left:px;
+}
+
+.myself{
+  text-align:left;
+}
+
+.decor{
+  font-family: inherit;
+  font-weight: 500;
+  padding-right: 6%;
+  line-height: 1.7;
+  font-size: large;
+}
+
+
+/* contact */
+
+
+.contact{
+  text-align:center;
+  margin-top: 7%;
+}
+
+.ques{
+  border:6px solid;
+  width:50%;
+  margin:auto;
+  padding-top: 3%;
+}
+
+.dark{
+  background-color: black;
+  height: 150px;
+  margin-top: 4%;
+}
+
+.social{
+  color: white;
+  font-size: 30px;
+  margin: 3% 1%;
+}
+
+.social:hover{
+  color: #faa;
+}
+
+.grey{
+  color: grey;
+}
+
+/* contact */
+
+.img{
+  display: block;
+  margin: 5% auto;
+  height: 150px;
+}
+
+.r1{
+  margin:5% 20%;
+}
+
+.ques2{
+  text-align:center;
+  font-family: auto;
+  margin: 0 20% 8%;
+}
+
+.area{
+  height:200px;
+}
+
+.r2{
+  margin-bottom: 40px;
+}
+
+.buttonc{
+ margin: 7% 43%;
+}
+
+.heading{
+  margin-bottom: 0;
+}
